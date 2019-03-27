@@ -1,4 +1,4 @@
-1、[About（项目概况）](/about)
+1、[About（项目概况）](/about。md)
 
 2、Team profile（团队组建与分工）
 
