@@ -16,6 +16,6 @@
 
 待填
 
-## 项目结构及技术站
+## 项目结构及技术栈
 - Web前端：NodeJS、Vue、webpack
 - 后端：NodeJS、MySQL、redis、docker、nginx
