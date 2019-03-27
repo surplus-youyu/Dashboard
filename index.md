@@ -1,4 +1,4 @@
-1、[About（项目概况）](https://github.com/surplus-youyu/Dashboard/raw/master/about.md)
+1、[About（项目概况）](/about)
 
 2、Team profile（团队组建与分工）
 
