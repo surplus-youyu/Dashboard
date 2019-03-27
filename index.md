@@ -34,6 +34,8 @@
 
 X1 meeting-records
 
+- [meet1](meet/Meeting_1_20190327.md)
+
 X2 [KANBAN](https://github.com/orgs/surplus-youyu/projects/1)
 
 X3 Final Report
