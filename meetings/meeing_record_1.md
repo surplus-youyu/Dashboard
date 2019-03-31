@@ -27,4 +27,4 @@
 
 #### 会议记录
 
-![思维导图](image/meeting1.png)
+![思维导图](../assets/images/meeting1.png)

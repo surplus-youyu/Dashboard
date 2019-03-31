@@ -1,4 +1,4 @@
-1、[About（项目概况）](/about.md)
+1、[About（项目概况）](docs/about.md)
 
 2、Team profile（团队组建与分工）
 
@@ -33,9 +33,9 @@
 - 8.4 部署说明
 
 X1 meeting-records
-- [meeting-record-1](/meeting/meeting_record_1.md)
+- [meeting-record-1](meetings/meeting_record_1.md)
 
-X2 [KANBAN](https://github.com/orgs/surplus-youyu/projects/1)
+X2 [KANBAN](https://github.com/orgs/surplus-youyu/projects)
 
 X3 Final Report
 
