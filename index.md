@@ -33,6 +33,7 @@
 - 8.4 部署说明
 
 X1 meeting-records
+- [meeting-record-1](/meeting/meeting_record_1.md)
 
 X2 [KANBAN](https://github.com/orgs/surplus-youyu/projects/1)
 
