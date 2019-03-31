@@ -24,13 +24,13 @@
 
 这是一个推荐的做法：
 
-```
+```go
 var t []string
 ```
 
 这是不好的：
 
-```
+```go
 t := []string{}
 ```
 
@@ -47,7 +47,7 @@ Go提供两种注释风格，C的块注释风格/**/，C++的行注释风格//
   包注释建议使用C注释风格，如果这个包特别简单，需要的注释很少，也可以选择使用C++注释风格。
 - 每个public函数都应该有注释，注释句子应该以该函数名开头，如：
 
-```
+```go
 // Compile parses a regular expression and returns, if successful,
 // a Regexp that can be used to match against text.
 func Compile(str string) (*Regexp, error) {
@@ -86,7 +86,7 @@ func Compile(str string) (*Regexp, error) {
 
 以下是一个不错的import示例：
 
-```
+```go
 package main
 
 import (
@@ -108,7 +108,7 @@ import (
 
 在测试中，我们很可能会使用这个特性，该特性能让我们避免循环引用问题，思考一下下面的例子：
 
-```
+```go
 package foo_test
 
 import (
@@ -133,7 +133,7 @@ import (
 
 这是一个不好的代码风格，正常逻辑代码被缩进在else分支里面：
 
-```
+```go
 if err != nil {
     // error handling
 } else {
@@ -143,7 +143,7 @@ if err != nil {
 
 这是一个不错的代码风格，没有增加正常逻辑代码的缩进：
 
-```
+```go
 if err != nil {
     // error handling
     return // or continue, etc.
@@ -155,7 +155,7 @@ if err != nil {
 
 这是一个不好的代码风格，函数调用，初始化变量x，判断错误是否为空都在同一行，并增加了正常逻辑代码的缩进：
 
-```
+```go
 if x, err := f(); err != nil {
     // error handling
     return
@@ -166,7 +166,7 @@ if x, err := f(); err != nil {
 
 这是一个不错的代码风格，将函数调用，初始化变量x写在同一行，并且避免了正常逻辑代码的缩进：
 
-```
+```go
 x, err := f()
 if err != nil {
     // error handling
@@ -210,14 +210,14 @@ Go建议使用驼峰式命名，不建议使用下划线命名。
 
 这是一个不好的代码风格，我们只知道函数返回的类型，但不知道每个返回值的名字：
 
-```
+```go
 func (n *Node) Parent1() *Node
 func (n *Node) Parent2() (*Node, error)
 ```
 
 这是一个不错的代码风格，我们准确知道每个返回值的名字：
 
-```
+```go
 func (n *Node) Parent1() (node *Node)
 func (n *Node) Parent2() (node *Node, err error)
 ```
