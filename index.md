@@ -30,7 +30,7 @@
 - 8.1 代码规范
   - 8.1.1 [前端vue代码规范](docs/fe-code-style-guide.md)
   - 8.1.2 [后端Golang代码规范](docs/se-code-style-guide.md)
-- 8.2 REST API 设计规范
+- 8.2 [REST API 设计规范](docs/Restful-api-design-guide.md)
 - 8.3 架构设计、详细设计（BCE 方法）到应用程序框架映射指南
 - 8.4 部署说明
 
