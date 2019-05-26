@@ -10,7 +10,7 @@
 
 6、Requirement specification（需求规格说明书）
 
-- 6.1 Use Case Diagram（用例图）
+- 6.1 [Use Case Diagram](docs/use-case-diagram.md)（用例图）
 - 6.2 Use Cases（用例+活动图）
 - 6.3 Domain Models（领域模型）
 - 6.4 State Models（状态模型）
