@@ -15,7 +15,7 @@
 
 **登录**
 
-```http
+```
 PUT /api/login
 
 Request(application/json):
@@ -30,7 +30,7 @@ Request(application/json):
 
 **注册**
 
-```http
+```
 PUT /api/login
 
 Request(application/json):
@@ -46,7 +46,7 @@ Request(application/json):
 
 **获取用户信息**
 
-```http
+```
 GET /api/user
 ```
 
@@ -54,7 +54,7 @@ GET /api/user
 
 **修改用户信息**
 
-```http
+```
 PUT /api/user
 
 Request(application/json):
@@ -73,7 +73,7 @@ Request(application/json):
 
 **任务列表**
 
-```http
+```
 GET /api/surveys
 ```
 
@@ -81,7 +81,7 @@ GET /api/surveys
 
 **任务详情**
 
-```http
+```
 GET /api/surveys/:sid
 ```
 
@@ -89,7 +89,7 @@ GET /api/surveys/:sid
 
 **发布任务**
 
-```http
+```
 POST /api/surveys
 
 {
@@ -103,7 +103,7 @@ POST /api/surveys
 
 **领取任务**
 
-```http
+```
 POST /api/surveys/:sid/pull
 ```
 
@@ -111,7 +111,7 @@ POST /api/surveys/:sid/pull
 
 **提交任务**
 
-```http
+```
 POST /api/surveys/:sid/submit
 
 {
