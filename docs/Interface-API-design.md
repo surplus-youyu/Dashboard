@@ -2,7 +2,7 @@
 
 通用响应格式
 
-```json
+```
 {
     "status": bool,
     "msg": str
