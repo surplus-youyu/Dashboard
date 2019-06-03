@@ -67,6 +67,40 @@ Request(application/json):
 
 
 
+**用户头像**
+
+```
+GET /api/user/avatar
+
+PUT /api/user/avatar
+
+Request(multipart/form-data):
+
+{
+    "avatar": ...
+}
+```
+
+
+
+**获得与当前用户的任务（发布，接受）**
+
+```
+GET /api/user/tasks?role=
+
+role: 'publisher', 'recipient', ''
+```
+
+
+
+**获得用户参与的组**
+
+```
+GET /api/user/groups
+```
+
+
+
 
 
 ## 任务
@@ -74,7 +108,7 @@ Request(application/json):
 **任务列表**
 
 ```
-GET /api/surveys
+GET /api/tasks
 ```
 
 
@@ -82,7 +116,7 @@ GET /api/surveys
 **任务详情**
 
 ```
-GET /api/surveys/:sid
+GET /api/tasks/:tid
 ```
 
 
@@ -90,13 +124,25 @@ GET /api/surveys/:sid
 **发布任务**
 
 ```
-POST /api/surveys
+POST /api/tasks
+
+Request(multipart/form-data):
 
 {
   "title": "",
   "content": "",
-  "bounty": 0
+  "type": "",
+  "bounty": 0,
+  "enclosure": ...
 }
+```
+
+
+
+**删除任务**
+
+```
+DELETE /api/tasks/:tid
 ```
 
 
@@ -104,7 +150,7 @@ POST /api/surveys
 **领取任务**
 
 ```
-POST /api/surveys/:sid/pull
+POST /api/tasks/:tid/recieve
 ```
 
 
@@ -112,14 +158,81 @@ POST /api/surveys/:sid/pull
 **提交任务**
 
 ```
-POST /api/surveys/:sid/submit
+POST /api/tasks/:tid/submit
+
+Request(multipart/form-data):
 
 {
-  "content": ""
+  "content": "",
+  "enclosure": ...
 }
 ```
 
 
+
+
+
+## 兴趣组
+
+**获得公开的组**
+
+```
+GET /api/groups
+```
+
+
+
+**创建某个组**
+
+```
+POST /api/groups
+
+{
+    name: "",
+    summary: "",
+    "is_public": ""
+}
+```
+
+
+
+**获得某个组的信息**
+
+```
+GET /api/groups/:gid
+```
+
+
+
+**修改某个组的信息（群主）**
+
+```
+PUT /api/groups/:gid
+```
+
+
+
+**解散某个组**
+
+```
+DELETE /api/groups/:gid
+```
+
+
+
+**将某个用户加入（群主） /  加入某个组**
+
+```
+POST /api/groups/:gid/users/:uid
+```
+
+
+
+**将某个用户移出（群主） / 退出某个组**
+
+```
+DELETE api/groups/:gid/users/:uid
+```
 
 
 
