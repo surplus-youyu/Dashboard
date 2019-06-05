@@ -32,7 +32,7 @@
   - 8.1.2 [后端Golang代码规范](docs/se-code-style-guide.md)
 - 8.2 [REST API 设计规范](docs/Restful-api-design-guide.md)
 - 8.3 架构设计、详细设计（BCE 方法）到应用程序框架映射指南
-- 8.4 部署说明
+- 8.4 [部署说明](docs/deploy.md)
 
 X1 meeting-records
 - [meeting-record-1](meetings/meeting_record_1.md)
