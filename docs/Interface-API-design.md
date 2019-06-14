@@ -159,7 +159,7 @@ GET /api/assignments/assign_id
 
 **提交一个答案**
 ```
-POST /api/assignments/assign_id
+POST /api/assignments/:assign_id
 {
   "payload": ...
 }
@@ -167,7 +167,7 @@ POST /api/assignments/assign_id
 
 **查看某一个提交**
 ```
-GET /api/assignments/assign_id
+GET /api/assignments/:assign_id
 ```
 
 **获取某个任务的所有提交**
