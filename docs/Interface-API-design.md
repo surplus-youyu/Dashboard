@@ -142,6 +142,9 @@ PUT /api/tasks/:tid
 **领取任务**
 ```
 POST /api/assignments
+{
+ "task_id": ...
+}
 ```
 
 **查看自己领取的任务列表**
