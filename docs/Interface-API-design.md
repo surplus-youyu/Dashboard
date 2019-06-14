@@ -125,12 +125,12 @@ POST /api/tasks
 Request(multipart/form-data):
 
 {
-  "title": "", 
-  "summary": "", // description of the task
-  "type": "", // survey or normal
-  "extra": "", // questionnaire only. the content of the questionnaire
-  "bounty": 0,
-  "enclosure": ...
+  title: ...,
+  description: ...,
+  type: 'TASK_TYPE_SURVEY' | 'TASK_TYPE_CUSTOM',
+  content: ..., // extra content, useless to custom tasks
+  reward: ...,
+  limit: ...
 }
 ```
 
