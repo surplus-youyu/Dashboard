@@ -2,5 +2,5 @@
 
 
 
-![](assets/images/arch-design.png)
+![](../assets/images/arch-design.png)
 
