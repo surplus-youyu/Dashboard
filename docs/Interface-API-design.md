@@ -31,7 +31,7 @@ Request(application/json):
 **注册**
 
 ```
-PUT /api/login
+PUT /api/register
 
 Request(application/json):
 
