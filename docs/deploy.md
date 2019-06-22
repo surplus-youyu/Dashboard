@@ -29,11 +29,89 @@ docker container run --name youyu-fe -d -p xxxx:yyyy -it nginx
 ```
 由于服务器资源有限，我们没有选择在服务器上进行`vue-service-cli build`，而是在本地进行build，并将dist文件夹上传到GitHub上。
 
+
+
 ## 服务端部署文档
+
+服务端使用 *travis* 和 *docker-compose* 实现自动部署
+
+### travis
+
+利用 ssh 免密登录 可以实现在 travis 上 ssh 进远程服务器运行脚本，配置过程不再赘述。
+
+```yml
+# travis.yml
+language: go
+
+go:
+  - 1.12.x
+
+addons:
+  ssh_known_hosts:
+    - "$server_ip"
+
+# Go module on
+env:
+  - GO111MODULE=on
+
+ # Decrypt public key
+before_install:
+  - openssl aes-256-cbc -K $encrypted_f33d63438573_key -iv $encrypted_f33d63438573_iv 
+    -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+
+# Lint & Build & Test
+script:
+  - go build -mod=vendor
+  - diff -u <(echo -n) <(gofmt -d $(find . -type f -name "*.go" ! -path "./vendor/*"))
+  - go test -v ./...
+
+# Deployee
+after_success:
+  - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && ssh travis@$server_ip -o StrictHostKeyChecking=no "bash ~/Youyu-se/.travis/deploy.sh"
+```
+
+
+
+### Docker-compose
+
+ docker-compose 的配置也很简单，主要是将 **构建** 和 **端口映射** 做好就行。
+
+```yml
+version: '3'
+services:
+  web:
+    container_name: youyu-se
+    image: golang:latest
+    working_dir: /go/src/github.com/surplus-youyu/Youyu-se
+    command: go run -mod=vendor main.go		# Build & Run
+    env_file:
+      - .env								# Secret config
+    ports:
+      - "8888:8080"							# Port mapping
+    volumes:
+      - ..:/go/src/github.com/surplus-youyu/Youyu-se
+```
+
+
 
 ## 数据库部署文档
 只需要开启mysql服务即可。
 ```
 sudo systemctl start mysql
 ```
-如果外网无法访问这个数据库，可以在mysql.conf中修改bind-address，或者将其注释掉。
+### 外网访问
+
+- 将 `mysql.conf` 中的 `bind-address` 注释掉。
+- 创建一个可以通过外网访问的用户：
+
+```mysql
+mysql> show grants for [secure];
++-----------------------------------------------------------------+
+| Grants for [secure]@%                                           |
++-----------------------------------------------------------------+
+| GRANT ALL PRIVILEGES ON *.* TO '[secure]'@'%' WITH GRANT OPTION |
++-----------------------------------------------------------------+
+1 row in set (0.00 sec)
+```
+

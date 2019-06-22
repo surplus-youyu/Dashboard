@@ -31,7 +31,7 @@ Request(application/json):
 **注册**
 
 ```
-PUT /api/login
+PUT /api/register
 
 Request(application/json):
 
@@ -47,7 +47,8 @@ Request(application/json):
 **获取用户信息**
 
 ```
-GET /api/user
+GET /api/user # 获得自己
+GET /api/user/:uid  # 获得别人
 ```
 
 
@@ -70,9 +71,9 @@ Request(application/json):
 **用户头像**
 
 ```
-GET /api/user/avatar
+GET /api/user/:uid/avatar
 
-PUT /api/user/avatar
+PUT /api/user/:uid/avatar
 
 Request(multipart/form-data):
 
@@ -111,15 +112,11 @@ GET /api/user/groups
 GET /api/tasks
 ```
 
-
-
 **任务详情**
 
 ```
 GET /api/tasks/:tid
 ```
-
-
 
 **发布任务**
 
@@ -129,49 +126,63 @@ POST /api/tasks
 Request(multipart/form-data):
 
 {
-  "title": "", 
-  "summary": "", // description of the task
-  "type": "", // survey or normal
-  "extra": "", // questionnaire only. the content of the questionnaire
-  "bounty": 0,
-  "enclosure": ...
+  title: ...,
+  description: ...,
+  type: 'TASK_TYPE_SURVEY' | 'TASK_TYPE_CUSTOM',
+  content: ..., // extra content, useless to custom tasks
+  reward: ...,
+  limit: ...
 }
 ```
 
-
-
-**删除任务**
-
+**任务结束**
 ```
-DELETE /api/tasks/:tid
+PUT /api/tasks/:tid
 ```
-
-
 
 **领取任务**
-
 ```
-POST /api/tasks/:tid/recieve
-```
-
-
-
-**提交任务**
-
-```
-POST /api/tasks/:tid/submit
-
-Request(multipart/form-data):
-
+POST /api/assignments
 {
-  "content": "",
-  "enclosure": ...
+ "task_id": ...
 }
 ```
 
+**查看自己领取的任务列表**
+```
+GET /api/assignments
+```
 
+**查看自己领取任务的详情**
+```
+GET /api/assignments/assign_id
+```
 
+**提交一个答案**
+```
+POST /api/assignments/:assign_id
+{
+  "payload": ...
+}
+```
 
+**查看某一个提交**
+```
+GET /api/assignments/:assign_id
+```
+
+**获取某个任务的所有提交**
+```
+GET /api/tasks/:tid/assignments
+```
+
+**审核某个任务的某一次提交**
+```
+PUT /api/tasks/:task_id/assignments/:assgn_id
+{
+  "pass": true/false
+}
+```
 
 ## 兴趣组
 
