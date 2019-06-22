@@ -39,10 +39,11 @@ X1 meeting-records
 
 X2 [KANBAN](https://github.com/orgs/surplus-youyu/projects)
 
-X3 Final Report
+X3 Tech/Work Report
 
 - 学号-title
 
-X4 周报
+X4 Final Report
 
 - 学号-title
+- 小组分工与贡献率说明
