@@ -35,7 +35,7 @@
 - 8.4 [部署说明](docs/deploy.md)
 
 X1 meeting-records
-- [meeting-record-1](meetings/meeting_record_1.md)
+- [meeting-record-1 (2019/03/30)](meetings/meeting_record_1.md)
 
 X2 [KANBAN](https://github.com/orgs/surplus-youyu/projects)
 
