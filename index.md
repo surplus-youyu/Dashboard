@@ -4,7 +4,7 @@
 
 3、[Investigation](docs/investigation.md) （项目前期调研/竞品分析）
 
-4、Vision（项目愿景）
+4、[Vision](docs/vision.md)（项目愿景）
 
 5、Product Backlog（产品特性库）
 
