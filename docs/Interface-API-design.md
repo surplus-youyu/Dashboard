@@ -47,7 +47,8 @@ Request(application/json):
 **获取用户信息**
 
 ```
-GET /api/user
+GET /api/user # 获得自己
+GET /api/user/:uid  # 获得别人
 ```
 
 
@@ -70,9 +71,9 @@ Request(application/json):
 **用户头像**
 
 ```
-GET /api/user/avatar
+GET /api/user/:uid/avatar
 
-PUT /api/user/avatar
+PUT /api/user/:uid/avatar
 
 Request(multipart/form-data):
 
