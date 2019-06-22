@@ -15,7 +15,7 @@
 - 6.3 Domain Models（领域模型）
 - 6.4 [State Models](docs/state-models.md)（状态模型）
 - 6.5 System Sequence Diagrams（功能模型）
-- 6.6 Supplementary Requirements（补充需求）
+- 6.6 [Supplementary Requirements](docs/supplementary-requirements.md)（补充需求）
 
 7、Design（设计说明书）
 
