@@ -8,13 +8,13 @@
 
 ## 团队分工
 
-| 学号     | 姓名   | Github     | 岗位角色 |
-| -------- | ------ | ---------- | -------- |
-| 16340010 | 曾广韬 | ChaosCodes | 产品经理 |
-|          |        |            |          |
-|          |        |            |          |
-|          |        |            |          |
-|          |        |            |          |
-|          |        |            |          |
-|          |        |            |          |
-|          |        |            |          |
+| 学号     | 姓名      | Github              | 岗位角色      |
+| -------- | --------- | ------------------- | ------------- |
+| 16340010 | Chaos     | ChaosCodes          | 产品经理      |
+| 16340086 | huangyt39 | huangyt39           | 产品经理      |
+| 16340085 | Treek     | Treekay             | 产品经理      |
+| 16340150 | Planez    | buchuitoudegou      | Js, Go 工程师 |
+| 16340082 | Sandra    | 7cthunder           | Js 工程师     |
+| 16340083 | 过,       | ninanshoulewozaizhe | Js 工程师     |
+| 16340084 | vegchic   | vegchic             | Go 工程师     |
+| 16340106 | leiysky   | leiysky             | Go 工程师     |
