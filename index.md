@@ -1,6 +1,6 @@
 1、[About（项目概况）](docs/about.md)
 
-2、Team profile（团队组建与分工）
+2、Team profile（团队组建与分工）(docs/team-profile.md)
 
 3、[Investigation](docs/investigation.md) （项目前期调研/竞品分析）
 
