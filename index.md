@@ -38,7 +38,7 @@ X1 meeting-records
 - [Inception meeting (2019/03/30)](meetings/Inception-meeting.md)
 - [Iteration 1 meeting (2019/04/07)](meetings/Iteration-1-meeting.md)
 - [Iteration 2 meeting (2019/05/11)](meetings/Iteration-2-meeting.md)
-- [Iteration 3 meeting (2019/05/11)](meetings/Iteration-3-meeting.md)
+- [Iteration 3 meeting (2019/06/08)](meetings/Iteration-3-meeting.md)
 
 X2 [KANBAN](https://github.com/orgs/surplus-youyu/projects)
 
