@@ -1,6 +1,8 @@
 # 数据库设计
 
 
+可见 [Youyu-db](https://github.com/surplus-youyu/youyu-db)
+
 
 ## ER 图
 
