@@ -42,6 +42,8 @@ X1 meeting-records
 
 X2 [KANBAN](https://github.com/orgs/surplus-youyu/projects)
 
+X3 [auditing-records](docs/auditing.md)
+
 X3 Tech/Work Report
 
 - 学号-title
