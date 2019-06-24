@@ -17,4 +17,8 @@
 |   学号   | github-id | 标题                                                         | issue url                                     |
 | :------: | --------- | ------------------------------------------------------------ | --------------------------------------------- |
 | 16340084 | vegchic   | [【设计审计】关于数据库字段问题](https://github.com/haowe-7/Dashboard/issues/3) | https://github.com/haowe-7/Dashboard/issues/3 |
+<<<<<<< HEAD
 | 16340010 | ChaosCodes | 设计审计：代码结构问题 | https://github.com/sysucodingfarmers/MakeMoney/issues/22|
+=======
+
+>>>>>>> Update auditing record
