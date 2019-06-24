@@ -20,3 +20,4 @@
 | 16340084 | vegchic   | [【设计审计】关于数据库字段问题](https://github.com/haowe-7/Dashboard/issues/3) | https://github.com/haowe-7/Dashboard/issues/3 |
 | 16340010 | ChaosCodes | 设计审计：代码结构问题 | https://github.com/sysucodingfarmers/MakeMoney/issues/22|
 | 16340082 | 7cthunder | 设计审计：domain model 不准确 | https://github.com/swsad/Dashboard/issues/1|
+| 16340083 | ninanshoulewozaizhe | 设计审计：模型问题 | https://github.com/xianyu-team/Dashboard/issues/3|
