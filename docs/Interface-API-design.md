@@ -37,8 +37,7 @@ Request(application/json):
 
 {
     "email": "",
-    "nickname": "",
-    "password": "",
+    "password": ""
 }
 ```
 
