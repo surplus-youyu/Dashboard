@@ -46,7 +46,7 @@ X3 [auditing-records](docs/auditing.md)
 
 X3 Tech/Work Report
 
-- 学号-title
+- [16340084 - Golang 垃圾回收机制](https://vegchic.github.io/2019/06/20/Golang 垃圾回收机制/)
 
 X4 Final Report
 
