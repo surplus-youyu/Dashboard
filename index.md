@@ -51,4 +51,4 @@ X3 Tech/Work Report
 X4 Final Report
 
 - 学号-title
-- 小组分工与贡献率说明
+- [小组分工与贡献率说明](docs/contributions.md)
