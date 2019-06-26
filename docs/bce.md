@@ -20,6 +20,58 @@ MySQL 提供了数据的持久化服务
 
 ## 框架目录设计
 
+### Web
+
+```
+.
+├── babel.config.js
+├── ChangeLog.md
+├── default.conf
+├── dist
+│   ├── css
+│   ├── favicon.ico
+│   ├── fonts
+│   ├── img
+│   ├── index.html
+│   └── js
+├── LICENSE
+├── mock
+│   ├── index.js
+│   ├── questionnaire.js
+│   └── user.js
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── public
+│   ├── favicon.ico
+│   └── index.html
+├── README.md
+├── src
+│   ├── App.vue
+│   ├── assets
+│   ├── components
+│   ├── global-variables.less
+│   ├── global-variables.ts
+│   ├── layouts
+│   ├── main.ts
+│   ├── shims-module.d.ts
+│   ├── shims-tsx.d.ts
+│   ├── shims-vue.d.ts
+│   ├── stores
+│   ├── typings
+│   ├── utils
+│   └── views
+├── theme
+│   └── index.less
+├── tsconfig.json
+├── tslint.json
+└── vue.config.js
+```
+
+
+
+
+
 ### 后端
 
 ```
