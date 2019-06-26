@@ -1,3 +1,5 @@
+0、[软件设计综合实验要求Check List](docs/check-list.md)
+
 1、[About（项目概况）](docs/about.md)
 
 2、[Team profile（团队组建与分工）](docs/team-profile.md)
