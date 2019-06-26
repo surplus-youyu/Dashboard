@@ -47,6 +47,7 @@ X3 [auditing-records](docs/auditing.md)
 X3 Tech/Work Report
 
 - [16340084 - Golang 垃圾回收机制](https://vegchic.github.io/2019/06/20/Golang 垃圾回收机制/)
+- [16340082 - Swagger & Mock](https://7cthunder.github.io/2019/06/23/Swagger-Mock/)
 
 X4 Final Report
 
