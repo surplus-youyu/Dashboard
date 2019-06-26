@@ -81,6 +81,7 @@ MySQL 提供了数据的持久化服务
 ├── controllers
 │   ├── login.go
 │   ├── task.go
+│   ├── group.go
 │   └── user.go
 ├── docker
 │   └── docker-compose.yml
@@ -92,6 +93,7 @@ MySQL 提供了数据的持久化服务
 │   ├── answer.go
 │   ├── db.go
 │   ├── task.go
+│   ├── group.go
 │   └── user.go
 ├── README.md
 ├── routes
