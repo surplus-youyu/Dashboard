@@ -31,7 +31,6 @@ Request(application/json):
 
 ```
 PUT /api/logout
-
 ```
 
 **注册**
@@ -39,6 +38,11 @@ PUT /api/logout
 ```
 PUT /api/register
 
+Request(application/json):
+ {
+    "email": "",
+    "password": ""
+}
 ```
 
 
