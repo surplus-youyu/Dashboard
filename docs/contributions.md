@@ -41,7 +41,6 @@ Dashboard：
 
 前端原型：
 
-![](../assets/images/all-proto.png)
 
 ![all-proto](../assets/images/all-proto.png)
 
@@ -65,4 +64,4 @@ Dashboard：
 |            | 后端数据库，Youyu-db  | 50%      |          |   0      |          |          |          |          |          |
 | 分析与设计 | UI设计                | 0%       |          |   60%     |          |          |          |          |          |
 | 文档       | dashboard             | 20%      |          |   5%     |          |          |          |          |          |
-| 综合贡献   |                       | 20%      |          |   17%     |          |          |          |          |          |
+| 综合贡献   |                       | 20%      |          |   14%     |          |          |          |          |          |
