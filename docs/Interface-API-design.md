@@ -18,12 +18,6 @@
 ```
 PUT /api/login
 
-Request(application/json):
-
-{
-    "email": "",
-    "password": ""
-}
 ```
 
 **登出**
