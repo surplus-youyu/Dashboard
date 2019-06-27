@@ -52,6 +52,6 @@ X3 Tech/Work Report
 - [16340082 - Swagger & Mock](https://7cthunder.github.io/2019/06/23/Swagger-Mock/)
 
 X4 Final Report
-
+- [16340082 - 个人总结](reports/16340082.md)
 - [16340084 - 个人总结](reports/16340084.md)
 - [小组分工与贡献率说明](docs/contributions.md)
