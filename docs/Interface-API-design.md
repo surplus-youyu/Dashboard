@@ -26,12 +26,10 @@ Request(application/json):
 }
 ```
 
-
-
-**注册**
+**登出**
 
 ```
-PUT /api/register
+PUT /api/logout
 
 Request(application/json):
 
@@ -39,6 +37,13 @@ Request(application/json):
     "email": "",
     "password": ""
 }
+```
+
+**注册**
+
+```
+PUT /api/register
+
 ```
 
 
