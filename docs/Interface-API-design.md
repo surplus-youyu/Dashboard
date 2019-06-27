@@ -18,6 +18,13 @@
 ```
 PUT /api/login
 
+Request(application/json):
+
+{
+    "email": "",
+    "password": ""
+}
+
 ```
 
 **登出**
@@ -25,12 +32,6 @@ PUT /api/login
 ```
 PUT /api/logout
 
-Request(application/json):
-
-{
-    "email": "",
-    "password": ""
-}
 ```
 
 **注册**
