@@ -9,6 +9,7 @@
 | 16340084 | vegchic   | [【需求审计】提供对组的支持](https://github.com/haowe-7/Dashboard/issues/2) | https://github.com/haowe-7/Dashboard/issues/2 |
 | 16340082 | 7cthunder | 需求审计：发布问卷后没有统计功能 | https://github.com/hhhghh/Dashboard/issues/5|
 | 16340083 | ninanshoulewozaizhe | 需求审计：小组成员加入小组后没有功能 | https://github.com/hhhghh/Dashboard/issues/7|
+| 16340150 | buchuitoudegou | 需求审计：没有设置任务权限 | https://github.com/moneydoge/moneydoge.github.io/issues/134|
 
 
 
