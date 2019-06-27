@@ -30,7 +30,7 @@
 
 ## 软件设计文档
 
-可见 dashboard 7.x
+可见 dashboard 7.x 及 [软件设计文档](project-design.md)
 
 
 
