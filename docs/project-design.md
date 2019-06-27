@@ -153,27 +153,27 @@
 Go 流行的Web开发框架：
 
 - **Beego**：Go编程语言的开源，高性能Web框架。
-  - https://github.com/astaxie/beego
+  - [https://github.com/astaxie/beego](https://github.com/astaxie/beego)
   - [https://beego.me](https://beego.me/)
 
 - **Buffalo**：快速Web开发w/Go。
-  - https://github.com/gobuffalo/buffalo
+  - [https://github.com/gobuffalo/buffalo](https://github.com/gobuffalo/buffalo)
   - [https://gobuffalo.io](https://gobuffalo.io/)
 
 - **Echo**：高性能，极简主义的Go Web框架。
-  - https://github.com/labstack/echo
+  - [https://github.com/labstack/echo](https://github.com/labstack/echo)
   - [https://echo.labstack.com](https://echo.labstack.com/)
 
 - **Gin**：用Go（Golang）编写的HTTP Web框架。它具有类似Martini的API，具有更好的性能。
-  - https://github.com/gin-gonic/gin
-  - https://gin-gonic.github.io/gin
+  - [https://github.com/gin-gonic/gin](https://github.com/gin-gonic/gin)
+  - [https://gin-gonic.github.io/gin](https://gin-gonic.github.io/gin)
 
 - **Iris**：Go in the Universe中最快的Web框架。MVC功能齐全。今天拥抱未来。
-  - https://github.com/kataras/iris
+  - [https://github.com/kataras/iris](https://github.com/kataras/iris)
   - [https://iris-go.com](https://iris-go.com/)
 
 - **Revel**：Go语言的高生产力，全栈Web框架。
-  - https://github.com/revel/revel
+  - [https://github.com/revel/revel](https://github.com/revel/revel)
   - [https://revel.github.io](https://revel.github.io/)
 
 经过调研和讨论，选择了 Gin 为项目框架，因为其具备中文文档，易用的 API，以及大量资料，能帮助开发人员快速上手。
@@ -286,7 +286,7 @@ Go 流行的Web开发框架：
 
   router 的鉴权和路由
 
-  ```
+  ```go
   // auth api
   api.PUT("/login", controllers.LoginHandler)
   api.POST("/register", controllers.RegisterHandler)
@@ -299,7 +299,7 @@ Go 流行的Web开发框架：
 
   业务的逻辑
 
-  ```
+  ```go
   // get assignment list
   func GetAssignList(c *gin.Context) {
   	user := c.MustGet("user").(models.User)
@@ -315,7 +315,7 @@ Go 流行的Web开发框架：
 
   model 与数据库交互
 
-  ```
+  ```go
   func GetTaskListByCreator(creator int) []Task {
   	var taskList []Task
   	if err := DB.Find(&taskList, Task{Creator: creator}).Error; err != nil {
@@ -339,7 +339,7 @@ Nginx 和 Server 采用 Docker Compose 进行编排，Server 定义文件为 `do
 
 大致如下
 
-```
+```yml
 version: '3'
 services:
   web:
@@ -363,7 +363,7 @@ Server 使用 Travis-CI 进行持续集成、测试与部署，定义文件为`.
 
 大致如下：
 
-```
+```yml
 language: go
 
 go:
@@ -388,14 +388,13 @@ script:
 
 after_success:
   - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && ssh travis@$server_ip -o StrictHostKeyChecking=no "bash ~/Youyu-se/.travis/deploy.sh"
-
 ```
 
 
 
 部署脚本如下：
 
-```
+```bash
 #!/bin/bash
 set -ex
 
