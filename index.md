@@ -53,6 +53,7 @@ X3 Tech/Work Report
 - [16340083 - git-svn迁移](https://blog.csdn.net/weixin_36332464/article/details/93857009)
 - [16340150 - docker](https://github.com/buchuitoudegou/Note/blob/master/se/how%20to%20use%20docker.md/)
 - [16340085 - vendor包管理](https://blog.csdn.net/huangshk/article/details/93886248)
+- [16340010 - docker Day 1](https://chaoscodes.github.io/2019/04/02/Docker学习日记-Day1/)
 
 X4 Final Report
 - [16340082 - 个人总结](reports/16340082.md)
@@ -60,4 +61,5 @@ X4 Final Report
 - [16340083 - 个人总结](reports/16340083.md)
 - [16340150 - 个人总结](reports/16340150.md)
 - [16340085 - 个人总结](reports/16340085.md)
+- [16340010 - 个人总结](reports/16340010.md)
 - [小组分工与贡献率说明](docs/contributions.md)
