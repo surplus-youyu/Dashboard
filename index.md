@@ -48,12 +48,14 @@ X3 [auditing-records](docs/auditing.md)
 
 X3 Tech/Work Report
 
-- [16340084 - Golang 垃圾回收机制](https://vegchic.github.io/2019/06/20/Golang 垃圾回收机制/)
+- [16340084 - Golang 垃圾回收机制](https://vegchic.github.io/2019/06/20/Golang垃圾回收机制/)
 - [16340082 - Swagger & Mock](https://7cthunder.github.io/2019/06/23/Swagger-Mock/)
 - [16340083 - git-svn迁移](https://blog.csdn.net/weixin_36332464/article/details/93857009)
 - [16340150 - docker](https://github.com/buchuitoudegou/Note/blob/master/se/how%20to%20use%20docker.md/)
 - [16340085 - vendor包管理](https://blog.csdn.net/huangshk/article/details/93886248)
 - [16340010 - docker Day 1](https://chaoscodes.github.io/2019/04/02/Docker学习日记-Day1/)
+- [16340106 - Go 同步机制](https://leiysky.github.io/2019/02/03/Go%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6sync/)
+- [16340086 - Golang微框架Gin](https://blog.csdn.net/qq_36312784/article/details/94329921)
 
 X4 Final Report
 - [16340082 - 个人总结](reports/16340082.md)
@@ -62,4 +64,6 @@ X4 Final Report
 - [16340150 - 个人总结](reports/16340150.md)
 - [16340085 - 个人总结](reports/16340085.md)
 - [16340010 - 个人总结](reports/16340010.md)
+- [16340106 - 个人总结](reports/16340106.md)
+- [16340086 - 个人总结](reports/16340086.md)
 - [小组分工与贡献率说明](docs/contributions.md)
